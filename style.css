@@ -1,0 +1,64 @@
+body {
+    margin: 0px;
+}
+
+.nav_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_list {
+    list-style: none;
+    padding: 5px 0 5px 0;
+    gap: 1em;
+}
+
+.variable_button {
+    display: none;
+}
+
+.nav_hidden {
+    display: none;
+    padding: 0 1em 1em 0;
+}
+
+.nav_show {
+    display: inline;
+    padding: 0 1em 1em 0;
+}
+
+.light_mode {
+    color: black;
+    background-color: white;
+}
+
+.dark_mode {
+    color: white;
+    background-color: black;
+}
+
+@media (max-width: 426px) {
+    .nav_show {
+        display: none;
+        padding: 0 1em 1em 0;
+    }
+
+    .nav_bar {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: end;
+    }
+
+    .variable_button {
+        display: flex;
+    }
+
+    .nav_hidden {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1em 1em 0;
+    }
+}

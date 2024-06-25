@@ -7,14 +7,22 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-<body>
+<body class="light_mode">
     <header>
         <h1>Ulike former for Event listeners</h1>
+        <nav class="nav_bar">
+            <ul class="nav_list nav_hidden">
+                <li>Hovedside</li>
+                <li>Om oss</li>
+                <li>Kontakt oss</li>
+            </ul>
+            <button class="variable_button" onclick="toggle_dropdown()">Dropdown</button>
+        </nav>
     </header>
     <main>
         <div>
             <h1>Theme toggle</h1>
-            <button>Toggle</button>
+            <button onclick= "theme_toggle()">Toggle</button>
         </div>
         <div></div>
     </main>
