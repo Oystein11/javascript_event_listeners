@@ -15,10 +15,6 @@ body {
     gap: 1em;
 }
 
-.variable_button {
-    display: none;
-}
-
 .nav_hidden {
     display: none;
     padding: 0 1em 1em 0;
@@ -37,28 +33,4 @@ body {
 .dark_mode {
     color: white;
     background-color: black;
-}
-
-@media (max-width: 426px) {
-    .nav_show {
-        display: none;
-        padding: 0 1em 1em 0;
-    }
-
-    .nav_bar {
-        flex-direction: column-reverse;
-        justify-content: flex-end;
-        align-items: flex-end;
-        text-align: end;
-    }
-
-    .variable_button {
-        display: flex;
-    }
-
-    .nav_hidden {
-        display: flex;
-        flex-direction: column;
-        padding: 0 1em 1em 0;
-    }
 }
